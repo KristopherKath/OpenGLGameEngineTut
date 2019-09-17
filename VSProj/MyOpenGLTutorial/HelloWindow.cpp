@@ -44,6 +44,16 @@ int main()
 	//Render loop so program runs till told to stop
 	while (!glfwWindowShouldClose(window))
 	{
+		//input
+		proccessInput(window);
+
+		//Rendering commands here...
+			//sets color state
+		glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
+			//Uses color state
+		glClear(GL_COLOR_BUFFER_BIT);
+
+		//Check and call events and swap buffers
 		glfwSwapBuffers(window);
 		glfwPollEvents();
 	}
