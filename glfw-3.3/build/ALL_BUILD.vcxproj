@@ -1,0 +1,356 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{AE79AC7A-748E-3F3B-B961-2DB574538A9C}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\GameEngineProject\OpenGLGameEngine\OpenGLGameEngineTut\glfw-3.3\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule D:/GameEngineProject/OpenGLGameEngine/OpenGLGameEngineTut/glfw-3.3/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+D:\ProgramFiles\CMakex86\bin\cmake.exe -SD:/GameEngineProject/OpenGLGameEngine/OpenGLGameEngineTut/glfw-3.3 -BD:/GameEngineProject/OpenGLGameEngine/OpenGLGameEngineTut/glfw-3.3/build --check-stamp-file D:/GameEngineProject/OpenGLGameEngine/OpenGLGameEngineTut/glfw-3.3/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\GameEngineProject\OpenGLGameEngine\OpenGLGameEngineTut\glfw-3.3\build\CMakeFiles\3.15.3\CMakeCCompiler.cmake;D:\GameEngineProject\OpenGLGameEngine\OpenGLGameEngineTut\glfw-3.3\build\CMakeFiles\3.15.3\CMakeRCCompiler.cmake;D:\GameEngineProject\OpenGLGameEngine\OpenGLGameEngineTut\glfw-3.3\build\CMakeFiles\3.15.3\CMakeSystem.cmake;D:\GameEngineProject\OpenGLGameEngine\OpenGLGameEngineTut\glfw-3.3\cmake_uninstall.cmake.in;D:\GameEngineProject\OpenGLGameEngine\OpenGLGameEngineTut\glfw-3.3\src\glfw3.pc.in;D:\GameEngineProject\OpenGLGameEngine\OpenGLGameEngineTut\glfw-3.3\src\glfw3Config.cmake.in;D:\GameEngineProject\OpenGLGameEngine\OpenGLGameEngineTut\glfw-3.3\src\glfw_config.h.in;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\CMakeCInformation.cmake;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\CMakeCommonLanguageInclude.cmake;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\CMakeGenericSystem.cmake;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\CMakeInitializeConfigs.cmake;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\CMakeLanguageInformation.cmake;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\CMakePackageConfigHelpers.cmake;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\CMakeRCInformation.cmake;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\CMakeSystemSpecificInformation.cmake;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\CMakeSystemSpecificInitialize.cmake;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\CheckCSourceCompiles.cmake;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\CheckIncludeFile.cmake;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\CheckLibraryExists.cmake;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\Compiler\MSVC-C.cmake;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\FindDoxygen.cmake;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\FindPackageHandleStandardArgs.cmake;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\FindPackageMessage.cmake;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\FindThreads.cmake;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\GNUInstallDirs.cmake;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\Platform\Windows-MSVC-C.cmake;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\Platform\Windows-MSVC.cmake;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\Platform\Windows.cmake;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\Platform\WindowsPaths.cmake;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\WriteBasicConfigVersionFile.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\GameEngineProject\OpenGLGameEngine\OpenGLGameEngineTut\glfw-3.3\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule D:/GameEngineProject/OpenGLGameEngine/OpenGLGameEngineTut/glfw-3.3/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+D:\ProgramFiles\CMakex86\bin\cmake.exe -SD:/GameEngineProject/OpenGLGameEngine/OpenGLGameEngineTut/glfw-3.3 -BD:/GameEngineProject/OpenGLGameEngine/OpenGLGameEngineTut/glfw-3.3/build --check-stamp-file D:/GameEngineProject/OpenGLGameEngine/OpenGLGameEngineTut/glfw-3.3/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\GameEngineProject\OpenGLGameEngine\OpenGLGameEngineTut\glfw-3.3\build\CMakeFiles\3.15.3\CMakeCCompiler.cmake;D:\GameEngineProject\OpenGLGameEngine\OpenGLGameEngineTut\glfw-3.3\build\CMakeFiles\3.15.3\CMakeRCCompiler.cmake;D:\GameEngineProject\OpenGLGameEngine\OpenGLGameEngineTut\glfw-3.3\build\CMakeFiles\3.15.3\CMakeSystem.cmake;D:\GameEngineProject\OpenGLGameEngine\OpenGLGameEngineTut\glfw-3.3\cmake_uninstall.cmake.in;D:\GameEngineProject\OpenGLGameEngine\OpenGLGameEngineTut\glfw-3.3\src\glfw3.pc.in;D:\GameEngineProject\OpenGLGameEngine\OpenGLGameEngineTut\glfw-3.3\src\glfw3Config.cmake.in;D:\GameEngineProject\OpenGLGameEngine\OpenGLGameEngineTut\glfw-3.3\src\glfw_config.h.in;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\CMakeCInformation.cmake;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\CMakeCommonLanguageInclude.cmake;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\CMakeGenericSystem.cmake;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\CMakeInitializeConfigs.cmake;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\CMakeLanguageInformation.cmake;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\CMakePackageConfigHelpers.cmake;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\CMakeRCInformation.cmake;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\CMakeSystemSpecificInformation.cmake;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\CMakeSystemSpecificInitialize.cmake;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\CheckCSourceCompiles.cmake;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\CheckIncludeFile.cmake;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\CheckLibraryExists.cmake;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\Compiler\MSVC-C.cmake;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\FindDoxygen.cmake;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\FindPackageHandleStandardArgs.cmake;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\FindPackageMessage.cmake;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\FindThreads.cmake;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\GNUInstallDirs.cmake;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\Platform\Windows-MSVC-C.cmake;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\Platform\Windows-MSVC.cmake;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\Platform\Windows.cmake;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\Platform\WindowsPaths.cmake;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\WriteBasicConfigVersionFile.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\GameEngineProject\OpenGLGameEngine\OpenGLGameEngineTut\glfw-3.3\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule D:/GameEngineProject/OpenGLGameEngine/OpenGLGameEngineTut/glfw-3.3/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+D:\ProgramFiles\CMakex86\bin\cmake.exe -SD:/GameEngineProject/OpenGLGameEngine/OpenGLGameEngineTut/glfw-3.3 -BD:/GameEngineProject/OpenGLGameEngine/OpenGLGameEngineTut/glfw-3.3/build --check-stamp-file D:/GameEngineProject/OpenGLGameEngine/OpenGLGameEngineTut/glfw-3.3/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\GameEngineProject\OpenGLGameEngine\OpenGLGameEngineTut\glfw-3.3\build\CMakeFiles\3.15.3\CMakeCCompiler.cmake;D:\GameEngineProject\OpenGLGameEngine\OpenGLGameEngineTut\glfw-3.3\build\CMakeFiles\3.15.3\CMakeRCCompiler.cmake;D:\GameEngineProject\OpenGLGameEngine\OpenGLGameEngineTut\glfw-3.3\build\CMakeFiles\3.15.3\CMakeSystem.cmake;D:\GameEngineProject\OpenGLGameEngine\OpenGLGameEngineTut\glfw-3.3\cmake_uninstall.cmake.in;D:\GameEngineProject\OpenGLGameEngine\OpenGLGameEngineTut\glfw-3.3\src\glfw3.pc.in;D:\GameEngineProject\OpenGLGameEngine\OpenGLGameEngineTut\glfw-3.3\src\glfw3Config.cmake.in;D:\GameEngineProject\OpenGLGameEngine\OpenGLGameEngineTut\glfw-3.3\src\glfw_config.h.in;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\CMakeCInformation.cmake;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\CMakeCommonLanguageInclude.cmake;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\CMakeGenericSystem.cmake;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\CMakeInitializeConfigs.cmake;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\CMakeLanguageInformation.cmake;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\CMakePackageConfigHelpers.cmake;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\CMakeRCInformation.cmake;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\CMakeSystemSpecificInformation.cmake;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\CMakeSystemSpecificInitialize.cmake;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\CheckCSourceCompiles.cmake;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\CheckIncludeFile.cmake;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\CheckLibraryExists.cmake;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\Compiler\MSVC-C.cmake;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\FindDoxygen.cmake;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\FindPackageHandleStandardArgs.cmake;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\FindPackageMessage.cmake;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\FindThreads.cmake;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\GNUInstallDirs.cmake;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\Platform\Windows-MSVC-C.cmake;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\Platform\Windows-MSVC.cmake;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\Platform\Windows.cmake;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\Platform\WindowsPaths.cmake;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\WriteBasicConfigVersionFile.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\GameEngineProject\OpenGLGameEngine\OpenGLGameEngineTut\glfw-3.3\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule D:/GameEngineProject/OpenGLGameEngine/OpenGLGameEngineTut/glfw-3.3/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+D:\ProgramFiles\CMakex86\bin\cmake.exe -SD:/GameEngineProject/OpenGLGameEngine/OpenGLGameEngineTut/glfw-3.3 -BD:/GameEngineProject/OpenGLGameEngine/OpenGLGameEngineTut/glfw-3.3/build --check-stamp-file D:/GameEngineProject/OpenGLGameEngine/OpenGLGameEngineTut/glfw-3.3/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\GameEngineProject\OpenGLGameEngine\OpenGLGameEngineTut\glfw-3.3\build\CMakeFiles\3.15.3\CMakeCCompiler.cmake;D:\GameEngineProject\OpenGLGameEngine\OpenGLGameEngineTut\glfw-3.3\build\CMakeFiles\3.15.3\CMakeRCCompiler.cmake;D:\GameEngineProject\OpenGLGameEngine\OpenGLGameEngineTut\glfw-3.3\build\CMakeFiles\3.15.3\CMakeSystem.cmake;D:\GameEngineProject\OpenGLGameEngine\OpenGLGameEngineTut\glfw-3.3\cmake_uninstall.cmake.in;D:\GameEngineProject\OpenGLGameEngine\OpenGLGameEngineTut\glfw-3.3\src\glfw3.pc.in;D:\GameEngineProject\OpenGLGameEngine\OpenGLGameEngineTut\glfw-3.3\src\glfw3Config.cmake.in;D:\GameEngineProject\OpenGLGameEngine\OpenGLGameEngineTut\glfw-3.3\src\glfw_config.h.in;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\CMakeCInformation.cmake;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\CMakeCommonLanguageInclude.cmake;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\CMakeGenericSystem.cmake;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\CMakeInitializeConfigs.cmake;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\CMakeLanguageInformation.cmake;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\CMakePackageConfigHelpers.cmake;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\CMakeRCInformation.cmake;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\CMakeSystemSpecificInformation.cmake;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\CMakeSystemSpecificInitialize.cmake;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\CheckCSourceCompiles.cmake;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\CheckIncludeFile.cmake;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\CheckLibraryExists.cmake;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\Compiler\MSVC-C.cmake;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\FindDoxygen.cmake;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\FindPackageHandleStandardArgs.cmake;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\FindPackageMessage.cmake;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\FindThreads.cmake;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\GNUInstallDirs.cmake;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\Platform\Windows-MSVC-C.cmake;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\Platform\Windows-MSVC.cmake;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\Platform\Windows.cmake;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\Platform\WindowsPaths.cmake;D:\ProgramFiles\CMakex86\share\cmake-3.15\Modules\WriteBasicConfigVersionFile.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\GameEngineProject\OpenGLGameEngine\OpenGLGameEngineTut\glfw-3.3\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\GameEngineProject\OpenGLGameEngine\OpenGLGameEngineTut\glfw-3.3\build\ZERO_CHECK.vcxproj">
+      <Project>{4472F6EB-6F6F-3D52-A6F0-9A2431B7120F}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\GameEngineProject\OpenGLGameEngine\OpenGLGameEngineTut\glfw-3.3\build\examples\boing.vcxproj">
+      <Project>{C6BC842B-8340-369D-9DAD-A2825F704D4B}</Project>
+      <Name>boing</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\GameEngineProject\OpenGLGameEngine\OpenGLGameEngineTut\glfw-3.3\build\tests\clipboard.vcxproj">
+      <Project>{BA05F027-E8EF-3574-B748-7AB8523A04E3}</Project>
+      <Name>clipboard</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\GameEngineProject\OpenGLGameEngine\OpenGLGameEngineTut\glfw-3.3\build\tests\cursor.vcxproj">
+      <Project>{ADDA4E4D-8E93-31FD-BC59-971606B2F04C}</Project>
+      <Name>cursor</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\GameEngineProject\OpenGLGameEngine\OpenGLGameEngineTut\glfw-3.3\build\tests\empty.vcxproj">
+      <Project>{51C821D8-3A33-3F1E-8074-AE2DC7702140}</Project>
+      <Name>empty</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\GameEngineProject\OpenGLGameEngine\OpenGLGameEngineTut\glfw-3.3\build\tests\events.vcxproj">
+      <Project>{05F50576-9C34-3E1B-9B97-BACB8B898D7A}</Project>
+      <Name>events</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\GameEngineProject\OpenGLGameEngine\OpenGLGameEngineTut\glfw-3.3\build\tests\gamma.vcxproj">
+      <Project>{44AB3FBA-433F-3B7B-85F9-A8E46A04D54A}</Project>
+      <Name>gamma</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\GameEngineProject\OpenGLGameEngine\OpenGLGameEngineTut\glfw-3.3\build\examples\gears.vcxproj">
+      <Project>{E7491845-6FBE-3B50-B0EE-BDA0D2E49608}</Project>
+      <Name>gears</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\GameEngineProject\OpenGLGameEngine\OpenGLGameEngineTut\glfw-3.3\build\src\glfw.vcxproj">
+      <Project>{5EC3AE42-9491-3D56-8164-63E17C870A97}</Project>
+      <Name>glfw</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\GameEngineProject\OpenGLGameEngine\OpenGLGameEngineTut\glfw-3.3\build\tests\glfwinfo.vcxproj">
+      <Project>{48129015-932F-3D9A-8144-D08D7F1F4C5F}</Project>
+      <Name>glfwinfo</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\GameEngineProject\OpenGLGameEngine\OpenGLGameEngineTut\glfw-3.3\build\examples\heightmap.vcxproj">
+      <Project>{72FAEF1F-FABF-3CAF-88A4-DCD4506D4D1B}</Project>
+      <Name>heightmap</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\GameEngineProject\OpenGLGameEngine\OpenGLGameEngineTut\glfw-3.3\build\tests\icon.vcxproj">
+      <Project>{2ED5C85E-939B-31E6-97D4-3A39B0FD200D}</Project>
+      <Name>icon</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\GameEngineProject\OpenGLGameEngine\OpenGLGameEngineTut\glfw-3.3\build\tests\iconify.vcxproj">
+      <Project>{CB3DFCA2-73CE-3818-B118-A0820DFF92EE}</Project>
+      <Name>iconify</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\GameEngineProject\OpenGLGameEngine\OpenGLGameEngineTut\glfw-3.3\build\tests\inputlag.vcxproj">
+      <Project>{03418C6B-3FE0-374E-9F00-2DC017B5E74F}</Project>
+      <Name>inputlag</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\GameEngineProject\OpenGLGameEngine\OpenGLGameEngineTut\glfw-3.3\build\tests\joysticks.vcxproj">
+      <Project>{E46C6BE1-85C7-35A9-A94E-256D9CD6AAA4}</Project>
+      <Name>joysticks</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\GameEngineProject\OpenGLGameEngine\OpenGLGameEngineTut\glfw-3.3\build\tests\monitors.vcxproj">
+      <Project>{D440F3DE-24F0-3078-A3C2-C5F954756070}</Project>
+      <Name>monitors</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\GameEngineProject\OpenGLGameEngine\OpenGLGameEngineTut\glfw-3.3\build\tests\msaa.vcxproj">
+      <Project>{22FEAB5C-D21B-3F40-8575-0F98DE466553}</Project>
+      <Name>msaa</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\GameEngineProject\OpenGLGameEngine\OpenGLGameEngineTut\glfw-3.3\build\examples\offscreen.vcxproj">
+      <Project>{F90DC0DC-CDC3-3847-82A2-16F3BFD5956E}</Project>
+      <Name>offscreen</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\GameEngineProject\OpenGLGameEngine\OpenGLGameEngineTut\glfw-3.3\build\tests\opacity.vcxproj">
+      <Project>{62648703-8543-38B0-99CE-7491D3FF3F78}</Project>
+      <Name>opacity</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\GameEngineProject\OpenGLGameEngine\OpenGLGameEngineTut\glfw-3.3\build\examples\particles.vcxproj">
+      <Project>{44149C86-BE0A-3504-BC96-FF39014712A8}</Project>
+      <Name>particles</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\GameEngineProject\OpenGLGameEngine\OpenGLGameEngineTut\glfw-3.3\build\tests\reopen.vcxproj">
+      <Project>{83AE779D-AC9B-3D6D-80AC-7B7628FF4EA5}</Project>
+      <Name>reopen</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\GameEngineProject\OpenGLGameEngine\OpenGLGameEngineTut\glfw-3.3\build\examples\sharing.vcxproj">
+      <Project>{D8F67316-5BCD-35CA-8E50-0B339F09F10B}</Project>
+      <Name>sharing</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\GameEngineProject\OpenGLGameEngine\OpenGLGameEngineTut\glfw-3.3\build\examples\simple.vcxproj">
+      <Project>{9C2F1C89-932D-37F4-B76F-1674D0CDB53E}</Project>
+      <Name>simple</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\GameEngineProject\OpenGLGameEngine\OpenGLGameEngineTut\glfw-3.3\build\examples\splitview.vcxproj">
+      <Project>{BAB1BCAB-C9BD-3155-897D-5F0277FCF95F}</Project>
+      <Name>splitview</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\GameEngineProject\OpenGLGameEngine\OpenGLGameEngineTut\glfw-3.3\build\tests\tearing.vcxproj">
+      <Project>{E588E6AB-E558-3390-8105-009E5B6FAB52}</Project>
+      <Name>tearing</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\GameEngineProject\OpenGLGameEngine\OpenGLGameEngineTut\glfw-3.3\build\tests\threads.vcxproj">
+      <Project>{78A0E345-7D7E-3D6D-AF04-EE04BBE358ED}</Project>
+      <Name>threads</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\GameEngineProject\OpenGLGameEngine\OpenGLGameEngineTut\glfw-3.3\build\tests\timeout.vcxproj">
+      <Project>{18FCFC6C-332A-38C8-8817-DAFE2930FC6A}</Project>
+      <Name>timeout</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\GameEngineProject\OpenGLGameEngine\OpenGLGameEngineTut\glfw-3.3\build\tests\title.vcxproj">
+      <Project>{10826197-0716-317E-88B8-62921C4E509D}</Project>
+      <Name>title</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\GameEngineProject\OpenGLGameEngine\OpenGLGameEngineTut\glfw-3.3\build\tests\vulkan.vcxproj">
+      <Project>{2565D9F5-EA3F-3E4C-A4D1-C4677F16416B}</Project>
+      <Name>vulkan</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\GameEngineProject\OpenGLGameEngine\OpenGLGameEngineTut\glfw-3.3\build\examples\wave.vcxproj">
+      <Project>{4CCE79D1-1190-396D-AACD-D6B68ED8E241}</Project>
+      <Name>wave</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\GameEngineProject\OpenGLGameEngine\OpenGLGameEngineTut\glfw-3.3\build\tests\windows.vcxproj">
+      <Project>{1C41FAE1-9B42-39A0-8422-AB7772F92ABA}</Project>
+      <Name>windows</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

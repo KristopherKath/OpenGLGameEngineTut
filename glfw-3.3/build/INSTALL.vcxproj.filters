@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\GameEngineProject\OpenGLGameEngine\OpenGLGameEngineTut\glfw-3.3\build\CMakeFiles\0dcdac7cfd8b85b24e139704da36caef\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{E02F265D-A003-32D9-B053-5DB88AF6E72F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

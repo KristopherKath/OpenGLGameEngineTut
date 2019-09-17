@@ -1,0 +1,10 @@
+^D:\GAMEENGINEPROJECT\OPENGLGAMEENGINE\OPENGLGAMEENGINETUT\GLFW-3.3\BUILD\CMAKEFILES\0DCDAC7CFD8B85B24E139704DA36CAEF\GENERATE.STAMP.RULE
+setlocal
+D:\ProgramFiles\CMakex86\bin\cmake.exe -SD:/GameEngineProject/OpenGLGameEngine/OpenGLGameEngineTut/glfw-3.3 -BD:/GameEngineProject/OpenGLGameEngine/OpenGLGameEngineTut/glfw-3.3/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/GameEngineProject/OpenGLGameEngine/OpenGLGameEngineTut/glfw-3.3/build/GLFW.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
