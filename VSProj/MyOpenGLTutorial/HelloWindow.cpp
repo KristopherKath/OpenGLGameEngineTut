@@ -9,6 +9,9 @@
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 void proccessInput(GLFWwindow* window);
 
+const unsigned int WIDTH = 800;
+const unsigned int HEIGHT = 600;
+
 int main() 
 {
 	//Inits
@@ -20,7 +23,7 @@ int main()
 
 
 	//Create window
-	GLFWwindow* window = glfwCreateWindow(800, 600, "Im a Bee", NULL, NULL);
+	GLFWwindow* window = glfwCreateWindow(WIDTH, HEIGHT, "Im a Bee", NULL, NULL);
 	//Error if window didn't create
 	if (window == NULL)
 	{
@@ -39,13 +42,11 @@ int main()
 		return -1;
 	}
 
-	glViewport(0, 0, 800, 600);
-
 	//Render loop so program runs till told to stop
 	while (!glfwWindowShouldClose(window))
 	{
 		//input
-		proccessInput(window);
+		processInput(window);
 
 		//Rendering commands here...
 			//sets color state
@@ -62,14 +63,14 @@ int main()
 	return 0;
 }
 
-//For resizing screen when editied
+//For resizing screen when it is editied
 void framebuffer_size_callback(GLFWwindow* window, int width, int height)
 {
 	glViewport(0, 0, width, height);
 }
 
 //For checking input
-void proccessInput(GLFWwindow* window)
+void processInput(GLFWwindow* window)
 {
 	if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
 		glfwSetWindowShouldClose(window, true);
