@@ -121,7 +121,7 @@ int main()
 
 
 	//Create Vertex Buffer Object and bind
-	unsigned int VAO1, VAO2, VBO1, VBO2, EBO; // Vertix Array Object, Vertix Buffer Object, Element Buffer Object
+	unsigned int VAO, VBO, EBO; // Vertix Array Object, Vertix Buffer Object, Element Buffer Object
 
 	glGenVertexArrays(1, &VAO); /* Defines how many Vertex Arrays to generate and Send to Array Object */
 	glGenBuffers(1, &VBO); //Defines how many buffer objects to generate and send to Buffer Object
@@ -169,7 +169,7 @@ int main()
 		// draw our first triangle
 		glUseProgram(shaderProgram);
 		glBindVertexArray(VAO); // seeing as we only have a single VAO there's no need to bind it every time, but we'll do so to keep things a bit more organized
-		glDrawArrays(GL_TRIANGLES, 0, 6);
+		//glDrawArrays(GL_TRIANGLES, 0, 6);
 		glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
 		// glBindVertexArray(0); // no need to unbind it every time 
 
