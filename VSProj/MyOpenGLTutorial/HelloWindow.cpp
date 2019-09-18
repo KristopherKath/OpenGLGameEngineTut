@@ -107,23 +107,24 @@ int main()
 	// Set up vertex data (and buffers) and configure vertex attributes
 	// -----------------------------------------------------------------
 
-	float vertices[] = {
-		 0.5f,  0.5f, 0.0f,  // top right
-		 0.5f, -0.5f, 0.0f,  // bottom right
-		-0.5f, -0.5f, 0.0f,  // bottom left
-		-0.5f,  0.5f, 0.0f   // top left 
+	float vertices[] {
+		-1.0f, -0.5f, 0.0f, // (1) Bottom left
+		 0.0f, -0.5f, 0.0f, // (1) Bottom right & (2) Bottom left
+		-0.5f,  0.5f, 0.0f, // (1) Top
+		 1.0f, -0.5f, 0.0f, // (2) Bottom Right
+		 0.5f,  0.5f, 0.0f  // (2) Top
 	};
 	unsigned int indices[] = {  // note that we start from 0!
-		0, 1, 3,  // first Triangle
-		1, 2, 3   // second Triangle
+		0, 1, 2,  // first Triangle
+		4, 3, 1   // second Triangle
 	};
 
 
 	//Create Vertex Buffer Object and bind
-	unsigned int VAO, VBO, EBO;
+	unsigned int VAO1, VAO2, VBO1, VBO2, EBO; // Vertix Array Object, Vertix Buffer Object, Element Buffer Object
 
-	glGenVertexArrays(1, &VAO);
-	glGenBuffers(1, &VBO);
+	glGenVertexArrays(1, &VAO); /* Defines how many Vertex Arrays to generate and Send to Array Object */
+	glGenBuffers(1, &VBO); //Defines how many buffer objects to generate and send to Buffer Object
 	glGenBuffers(1, &EBO);
 
 	// bind the Vertex Array Object first, then bind 
@@ -150,7 +151,7 @@ int main()
 
 
 	// uncomment this call to draw in wireframe polygons.
-	/* glPolygonMode(GL_FRONT_AND_BACK, GL_LINE); */
+	glPolygonMode(GL_FRONT_AND_BACK, GL_LINE); 
 
 	//Render loop so program runs till told to stop
 	while (!glfwWindowShouldClose(window))
@@ -168,7 +169,7 @@ int main()
 		// draw our first triangle
 		glUseProgram(shaderProgram);
 		glBindVertexArray(VAO); // seeing as we only have a single VAO there's no need to bind it every time, but we'll do so to keep things a bit more organized
-		//glDrawArrays(GL_TRIANGLES, 0, 6);
+		glDrawArrays(GL_TRIANGLES, 0, 6);
 		glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
 		// glBindVertexArray(0); // no need to unbind it every time 
 
@@ -200,4 +201,8 @@ void processInput(GLFWwindow* window)
 {
 	if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
 		glfwSetWindowShouldClose(window, true);
+	if (glfwGetKey(window, GLFW_KEY_1) == GLFW_PRESS)
+		glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+	if (glfwGetKey(window, GLFW_KEY_2) == GLFW_PRESS)
+		glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
 }
